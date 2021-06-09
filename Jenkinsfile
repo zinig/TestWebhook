@@ -8,7 +8,9 @@ pipeline {
         }
         stage ('Git Checkout') {
             steps {
-                git branch: '/master', credentialsId: '4ba3aa74-75ee-46ac-91a4-a05901ff7e38', url: 'https://github.com/zinig/TestWebhook.git'
+                git branch: 'main', 
+                credentialsId: '4ba3aa74-75ee-46ac-91a4-a05901ff7e38', 
+                url: 'https://github.com/zinig/TestWebhook.git'
             }
         }
     }
