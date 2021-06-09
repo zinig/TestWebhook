@@ -1,10 +1,8 @@
 pipeline {
     agent none
-    stages {
-        stage('build') {
-            steps {
-                sh 'mvn --version'
-            }
+    stage ('Clean workspace') {
+        steps {
+            cleanWs()
         }
     }
 }
