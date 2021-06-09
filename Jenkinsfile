@@ -14,7 +14,7 @@ pipeline {
             }
         }
         stage('Restore packages') {
-            c
+            echo "${workspace}"
            // steps {
            //     bat "dotnet restore ${workspace}\\C:\TestWebHook\TestWebhook\JenkinsConsole\\JenkinsConsole.sln"
         //}
