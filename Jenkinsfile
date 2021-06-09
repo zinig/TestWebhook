@@ -14,10 +14,10 @@ pipeline {
             }
         }
         stage('Restore packages') {
-            echo "${workspace}"
-           // steps {
-           //     bat "dotnet restore ${workspace}\\C:\TestWebHook\TestWebhook\JenkinsConsole\\JenkinsConsole.sln"
-        //}
+            steps {
+                echo "${workspace}"
+                // bat "dotnet restore ${workspace}\\C:\TestWebHook\TestWebhook\JenkinsConsole\\JenkinsConsole.sln"
+            }
         }
     }
 }
