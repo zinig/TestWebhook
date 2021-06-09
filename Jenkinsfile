@@ -21,7 +21,7 @@ pipeline {
         }
         stage('Clean') {
             steps {
-                bat  "msbuild.exe ${workspace}\\JenkinsConsole\\JenkinsConsole.sln /nologo /nr:false /p:platform=\"x64\" /p:configuration=\"release\" /t:clean"
+                bat  "msbuild.exe ${workspace}\\JenkinsConsole\\JenkinsConsole.csproj /nologo /nr:false /p:platform=\"x64\" /p:configuration=\"release\" /t:clean"
             }
         }
     }
