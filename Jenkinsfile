@@ -23,7 +23,7 @@ pipeline {
             steps {
                 dir("${workspace}\\JenkinsConsole") {
 
-                    bat  "msbuild.exe JenkinsConsole.sln /nologo /nr:false /p:platform=\"Any CPU\" /p:configuration=\"release\" /t:clean"
+                    bat  'msbuild.exe JenkinsConsole.sln /nologo /nr:false /p:platform="Any CPU" /p:configuration=release /t:clean'
                 }
             }
         }
